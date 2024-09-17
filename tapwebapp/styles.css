@@ -1,0 +1,92 @@
+body { 
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 96%);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Sets the background color*/
+#todo-container {
+    background-color: #1be1d7a9;
+    padding: 70px;
+    border-radius: 60px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 1000%;
+    max-width: 1500px;
+}
+/*Aligns text to the left*/
+h2 {
+    text-align: left;
+    color: #333333;
+}
+#todo-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+/*The transition background color I set to linear, with padding and radius 10px and 5px respectively*/
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.11s linear;
+}
+button:hover {
+    background-color: hsl(0, 0%, 87%);
+}
+#add-btn {
+    width: 100%;
+    background-color: #28a745;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+#add-btn:hover {
+    background-color: hsl(262, 61%, 33%);
+}
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+/*However, everything still remains the same but alighnment is set to left hand-side*/
+#todo-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    justify-content: space-between;
+    align-items: left;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.11s linear, background-color 0.11s linear;
+}
+/*Hover scale is set for 1.04, with the background color of yellow*/
+#todo-list li:hover {
+    transform: scale(1.04);
+    background-color: #f0f0f0;
+}
+.buttons {
+    margin-left: 10px;
+}
+.buttons button {
+    margin-left: 5px;
+    background-color: hsl(82, 100%, 50%);
+    color: #fff;
+}
+/*I've set the background color for the button hover to black, to make it more dynamic and stylish*/
+.buttons button:hover {
+    background-color: #050505;
+}
+/*for remove, I have set the background color to be blue */
+.buttons button.remove {
+    background-color: hsl(250, 65%, 50%);
+}
+/*Button hover set to light blue */
+.buttons button.remove:hover {
+    background-color: hsl(191, 70%, 46%);
+}
